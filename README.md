@@ -5,7 +5,8 @@
 </p>
 
 # SCOPE & REACH — `quick_sco_re`
-(NOTE: For the experiments presented in the paper, look to cocoa_inference_testing)
+**(NOTE: For the experiments presented in the paper, look to cocoa_inference_testing)**
+
 **Variance-reduced event-probability estimation for any autoregressive generative model.**
 
 Standard Monte Carlo (MC) estimation generates *n* trajectory completions from a model and counts how many contain a target event. This is unbiased but wasteful — the model's full next-token probability distribution is computed at every decoding step, yet only the single sampled token is kept. SCOPE and REACH use those discarded distributions to produce better estimates from far fewer samples.
